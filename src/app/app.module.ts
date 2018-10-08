@@ -27,9 +27,13 @@ import { AuthComponent } from './auth/auth.component';
 import { SigninComponent } from './auth/signin/signin.component';
 import { SignupComponent } from './auth/signup/signup.component';
 
+// Routes
+import { AppRoutingModule } from './app-routing.module';
+
 @NgModule({
   declarations: [
     AppComponent,
+    // Components
     AccomodationComponent,
     RoomsComponent,
     FoodAndBeverageComponent,
@@ -51,8 +55,11 @@ import { SignupComponent } from './auth/signup/signup.component';
   ],
   imports: [
     BrowserModule,
+    // Material
     BrowserAnimationsModule,
     MaterialModule,
+    // Routes
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
