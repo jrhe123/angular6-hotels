@@ -3,6 +3,9 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
+// Libraries
+import { FlexLayoutModule } from '@angular/flex-layout';
+
 // Material Modules
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
@@ -68,6 +71,8 @@ import { NavtabsComponent } from './navigation/navtabs/navtabs.component';
     MaterialModule,
     // Routes
     AppRoutingModule,
+    // Libraries
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

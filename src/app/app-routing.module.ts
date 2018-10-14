@@ -18,7 +18,7 @@ const routes: Routes = [
   { path: 'food-and-beverage', component: FoodAndBeverageComponent },
   { path: 'lifestyle', component: LifestyleComponent },
   { path: 'weddings', component: WeddingsComponent },
-  { path: 'orders', component: OffersComponent },
+  { path: 'offers', component: OffersComponent },
   { path: 'signin', component: SigninComponent },
   { path: 'signup', component: SignupComponent },
   { path: '', component: HomeComponent }
