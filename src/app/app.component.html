@@ -1,9 +1,18 @@
-<button 
-  mat-raised-button 
-  color="primary" 
-  matBadge="8" 
-  matBadgePosition="before" 
-  matBadgeColor="accent"
->
-  Action
-</button>
+<mat-sidenav-container>
+
+  <mat-sidenav #sidenav>
+    <!-- 1 -->
+    <app-sidenav-list></app-sidenav-list>
+
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <!-- 2 -->
+    <app-header (SideNavigationToggle)="sidenav.toggle()"></app-header>
+    <!-- 3 -->
+    <app-navtabs></app-navtabs>
+
+  </mat-sidenav-content>
+
+  <router-outlet></router-outlet>
+</mat-sidenav-container>
